@@ -1,7 +1,13 @@
 import streamlit as st
 import requests
 import json
-from data_loader import load_data
+import pandas as pd
+
+@st.cache_data
+def load_data(file_name):
+    df = pd.read_csv(file_name)
+    df_sample = df.sample(frac=0.001)
+    return df_sample
 
 API_ENDPOINT = st.secrets["MODEL_API"]
 
@@ -64,7 +70,8 @@ st.link_button("Origen de los datos", "https://www.kaggle.com/datasets/luisfelip
 st.link_button("Código Fuente del Modelo en Colab", "https://colab.research.google.com/drive/1ToxpRRnyUK7xBUiOmT-XhmXe0aGjr5FJ?usp=sharing")
 
 # section 1
-st.header("Muestra de los datos", divider=True)
+st.header("Muestra de los datos originales", divider=True)
+@
 st.dataframe(table)
 
 # modelo
