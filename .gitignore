@@ -1,0 +1,13 @@
+Dashboard_Propiedades.pbix
+dashboard_propiedades.pptx
+dashboard_propiedades.svg
+df_comunas.csv
+Precio_Casas_RM_Multiple_Linear_Regression.ipynb
+.venv
+.vscode
+.env
+RainForestRegressorModel.joblib
+jodlib_files/
+.streamlit/
+main.py
+scaler.joblib
