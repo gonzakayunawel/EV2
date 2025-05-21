@@ -56,7 +56,7 @@ table = load_data("./precio_casas_rm - precio_casas_rm.csv")
 
 # tile
 st.title("Precio de las Casas :blue[_Región Metropolitana de Chile_] 🆑")
-st.write("Modelo de Regresión creando usando los datos de los Precios de las Casas Usadas en la Región Metropolitana de Chile.")
+st.write("Modelo de Regresión creado usando los datos de los Precios de las Casas Usadas en la Región Metropolitana de Chile.")
 
 # links
 
