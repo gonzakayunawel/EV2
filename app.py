@@ -71,7 +71,6 @@ st.link_button("Código Fuente del Modelo en Colab", "https://colab.research.goo
 
 # section 1
 st.header("Muestra de los datos originales", divider=True)
-@
 st.dataframe(table)
 
 # modelo
