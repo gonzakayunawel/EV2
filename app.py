@@ -105,6 +105,6 @@ if st.button("Predecir Precio"):
         predicted_price = predict(input_data_for_api)
 
     if predicted_price is not None:
-        st.success(f"El precio predicho de la casa es: **${predicted_price:,.2f}**")
+        st.success(f"El precio predicho de la casa es: **{predicted_price:,.2f} UF**")
     else:
         st.warning("No se pudo obtener una predicción. Por favor, revisa los errores anteriores.")
